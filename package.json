@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "lint": "eslint src --ext .ts --fix"
@@ -25,6 +26,7 @@
     "fastify": "4.15.0",
     "knex": "2.4.2",
     "pg": "8.10.0",
+    "sqlite3": "5.1.6",
     "zod": "3.21.4"
   }
 }
